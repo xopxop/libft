@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_list.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 11:32:53 by dthan             #+#    #+#             */
-/*   Updated: 2024/04/21 00:12:44 by dthan            ###   ########.fr       */
+/*   Created: 2020/02/21 06:48:24 by dthan             #+#    #+#             */
+/*   Updated: 2024/04/21 00:08:32 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
+#ifndef FT_LIST_H
+# define FT_LIST_H
+# include "ft_list.interface.h"
 
-# include "../ctype/ft_ctype.h"
-# include "../list/ft_list.h"
-# include "ft_print.h"
-# include "ft_stdio.h"
-# include "ft_stdlib.h"
-# include "../string/ft_string.h"
-# include "ft_utility.h"
-# include "get_next_line.h"
-# include "ft_printf.h"
+t_list	*ft_lstnew(void const *content, size_t content_size);
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstadd(t_list **alst, t_list *new);
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif

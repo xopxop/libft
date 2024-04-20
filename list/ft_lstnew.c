@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/26 19:30:19 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/28 17:56:57 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:15:04 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_list.h"
+#include "ft_list.interface.h"
+#include "../includes/ft_utility.h"
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

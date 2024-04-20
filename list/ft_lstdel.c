@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 16:05:31 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/28 18:45:08 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:13:31 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_list.h"
 
 /*
 ** ft_lstdel(t_list **alst, void (*del)(void *, size_t))
@@ -22,8 +24,6 @@
 ** RETURN VALUE: None.
 ** Libc function: free(3).
 */
-
-#include "../includes/ft_list.h"
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {

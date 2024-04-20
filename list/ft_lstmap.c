@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 16:38:01 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/29 23:32:00 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:10:59 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_list.interface.h"
 
 /*
 ** ft_lstmap
@@ -21,8 +23,6 @@
 ** RETURN VALUE: The new list.
 ** Libc FUNCTIONS: malloc(3), free(3).
 */
-
-#include "../includes/ft_list.h"
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {

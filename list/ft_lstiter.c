@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:56:21 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/30 10:25:21 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:10:49 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_list.interface.h"
 
 /*
 ** ft_lstiter
@@ -19,8 +21,6 @@
 ** RETURN VALUE: None.
 ** Libc FUNCTIONS: None.
 */
-
-#include "../includes/ft_list.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
