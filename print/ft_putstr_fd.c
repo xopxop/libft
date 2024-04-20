@@ -3,20 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 14:27:03 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/26 04:51:42 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:28:34 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_print.h"
+#include "ft_print.h"
 
-void	ft_putstr_fd(char const *string, int filedescriptor)
+void	ft_putstr_fd(char const *str, int fd)
 {
-	while (*string)
+	int	index;
+
+	index = 0;
+	while (str[index])
 	{
-		ft_putchar_fd(*string, filedescriptor);
-		string++;
+		ft_putchar_fd(str[index], fd);
+		index++;
 	}
 }

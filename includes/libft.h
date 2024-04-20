@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 11:32:53 by dthan             #+#    #+#             */
-/*   Updated: 2024/04/21 00:12:44 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:27:52 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 # include "../ctype/ft_ctype.h"
 # include "../list/ft_list.h"
-# include "ft_print.h"
+# include "../print/ft_print.h"
 # include "ft_stdio.h"
 # include "ft_stdlib.h"
 # include "../string/ft_string.h"

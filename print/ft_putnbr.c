@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 16:10:07 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/28 17:54:45 by dthan            ###   ########.fr       */
+/*   Updated: 2024/04/21 00:21:08 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_print.h"
+#include "ft_print.h"
 
 void	ft_putnbr(int nbr)
 {

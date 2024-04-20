@@ -1,6 +1,6 @@
 {
   "files.associations": {
     "*.embeddedhtml": "html",
-    "ft_list.interface.h": "c"
+    "ft_list.h": "c"
   }
 }
