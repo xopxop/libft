@@ -6,10 +6,11 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 11:21:14 by dthan             #+#    #+#             */
-/*   Updated: 2025/03/11 14:11:56 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 18:18:49 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "stdlib.h"
 #include "../utility/ft_utility.h"
 
 static int	getsizenumber(unsigned int nb)

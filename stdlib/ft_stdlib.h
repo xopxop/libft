@@ -6,13 +6,12 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 06:47:49 by dthan             #+#    #+#             */
-/*   Updated: 2020/02/21 06:47:50 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 18:21:15 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STDLIB_H
 # define FT_STDLIB_H
-# include "libft.h"
 
 int	ft_atoi(const char *str);
 

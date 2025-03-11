@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2025/03/11 14:09:49 by dthan            ###   ########.fr        #
+#    Updated: 2025/03/11 16:46:37 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -143,9 +143,10 @@ UTILITY := $(addprefix $(UTILITY_DIR)/,$(UTILITY_FILES))
 
 #<<<<<<<<<<GET_NEXT_LINE_PROJECT>>>>>>>>>#
 
-# GNL_DIR := get_next_line
-# GNL_FILES += get_next_line.c
-# GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
+GNL_DIR := get_next_line
+GNL_FILES += get_next_line.c
+GNL_FILES += gnl_helper.c
+GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
 
 ###### SUM-UP #####
 SRC += $(CTYPE)
@@ -155,7 +156,7 @@ SRC += $(PRINT)
 SRC += $(STDLIB)
 SRC += $(STRING)
 SRC += $(UTILITY)
-# SRC += $(GNL)
+SRC += $(GNL)
 
 OBJ_DIR := objects
 OBJ_FILES := $(addprefix $(OBJ_DIR)/,$(SRC:%.c=%.o))

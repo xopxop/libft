@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   gnl_helper.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/06 01:39:52 by dthan             #+#    #+#             */
-/*   Updated: 2019/11/08 04:32:10 by dthan            ###   ########.fr       */
+/*   Created: 2025/03/11 16:37:54 by dthan             #+#    #+#             */
+/*   Updated: 2025/03/11 16:58:42 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# define BUFF_SIZE 1000
-# define FD_MAX 256
-# include <stdlib.h>
-# include <fcntl.h>
-# include <unistd.h>
-# include "libft.h"
+#ifndef GNL_HELPER_H
+# define GNL_HELPER_H
 
-int	get_next_line(int fd, char **line);
+int	valid_fd(int fd);
+int	get_line_break_index(char *s);
+int	extract_line_from_storage(char **storage, char **line);
 
 #endif

@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/24 13:36:03 by dthan             #+#    #+#             */
-/*   Updated: 2025/03/11 18:16:48 by dthan            ###   ########.fr       */
+/*   Created: 2019/11/06 01:39:52 by dthan             #+#    #+#             */
+/*   Updated: 2025/03/11 16:43:22 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../string/ft_string.h"
-#include "../utility/ft_utility.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+# define BUFF_SIZE 1000
+# define FD_MAX 256
 
-char	*ft_strsub(char const *string, unsigned int start, size_t len)
-{
-	char	*substring;
+int	get_next_line(int fd, char **line);
 
-	if (!string)
-		return (NULL);
-	substring = ft_memalloc(len + 1);
-	if (!substring)
-		return (NULL);
-	substring = ft_strncpy(substring, (char *)string + start, len);
-	return (substring);
-}
+#endif

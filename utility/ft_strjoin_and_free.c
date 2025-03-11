@@ -6,13 +6,14 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 08:09:40 by dthan             #+#    #+#             */
-/*   Updated: 2025/03/11 14:12:06 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 18:19:07 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./ft_utility.h"
+#include <stdlib.h>
 
-char *ft_strjoin_and_free(char *s1, char *s2, int free_s1, int free_s2)
+char *ft_strjoin_and_free(char *s1, char *s2, char free_s1, char free_s2)
 {
 	char *result;
 
