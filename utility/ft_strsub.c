@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 13:36:03 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/26 04:41:15 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:10:50 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_utility.h"
+#include "../utility/ft_utility.h"
 
 char	*ft_strsub(char const *string, unsigned int start, size_t len)
 {

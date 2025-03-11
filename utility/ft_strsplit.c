@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 17:15:10 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/30 10:28:39 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:11:48 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_utility.h"
+#include "../utility/ft_utility.h"
 
 void	action(char const *str, char c, char **re)
 {

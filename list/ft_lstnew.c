@@ -6,12 +6,12 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/26 19:30:19 by dthan             #+#    #+#             */
-/*   Updated: 2024/04/21 00:15:04 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:09:18 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.interface.h"
-#include "../includes/ft_utility.h"
+#include "../utility/ft_utility.h"
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

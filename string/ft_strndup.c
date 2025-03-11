@@ -6,11 +6,11 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/06 00:18:18 by dthan             #+#    #+#             */
-/*   Updated: 2024/04/20 23:29:09 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:10:07 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_utility.h"
+#include "../utility/ft_utility.h"
 
 char	*ft_strndup(char *str, size_t len)
 {

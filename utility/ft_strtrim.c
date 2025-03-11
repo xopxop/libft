@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 14:25:48 by dthan             #+#    #+#             */
-/*   Updated: 2019/10/31 16:00:17 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:11:37 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_utility.h"
+#include "../utility/ft_utility.h"
 
 char	*ft_strtrim(char const *string)
 {

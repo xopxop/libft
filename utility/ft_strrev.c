@@ -6,11 +6,11 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/31 15:26:45 by dthan             #+#    #+#             */
-/*   Updated: 2020/02/10 09:21:45 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:12:25 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_utility.h"
+#include "../utility/ft_utility.h"
 
 char	*ft_strrev(char *str)
 {

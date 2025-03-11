@@ -6,11 +6,11 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 08:08:13 by dthan             #+#    #+#             */
-/*   Updated: 2020/02/21 08:08:18 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:12:17 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_utility.h"
+#include "../utility/ft_utility.h"
 
 static int	getsizenumber(unsigned long long nb)
 {

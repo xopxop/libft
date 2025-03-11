@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_utility.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 06:49:13 by dthan             #+#    #+#             */
-/*   Updated: 2020/07/09 02:37:58 by dthan            ###   ########.fr       */
+/*   Updated: 2025/03/11 14:06:52 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char    *ft_strjoin_and_free(char *s1, char *s2, int free_s1, int free_s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
@@ -35,8 +36,6 @@ int		ft_swap(int *a, int *b);
 char	*ft_itoa_signed_longlong(long long n);
 char	*ft_itoa_unsigned_longlong(unsigned long long nbr);
 char	*ft_strrev(char *str);
-char	*ft_strjoin_and_free_string2(char *string1, char *string2);
-char	*ft_strjoin_and_free_string1(char *string1, char *string2);
 int		ft_arrayct(char **input);
 void	ft_arraydel(char **string_array);
 
