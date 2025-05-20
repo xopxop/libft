@@ -6,22 +6,24 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/10 07:36:35 by dthan             #+#    #+#             */
-/*   Updated: 2020/02/18 00:01:26 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:50:06 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
 void	space_flag(t_info *info, char **str)
 {
 	if (info->flags & SPACE && info->specifier)
-		*str = ft_strjoin_and_free_string2(" ", *str);
+		*str = ft_strjoin_and_free(" ", *str, 0, 1);
 }
 
 void	plus_flag(t_info *info, char **str)
 {
 	if (info->flags & PLUS_SIGN)
-		*str = ft_strjoin_and_free_string2("+", *str);
+		*str = ft_strjoin_and_free("+", *str, 0, 1);
 }
 
 void	hash_flag(t_info *info, char **str)
@@ -29,12 +31,12 @@ void	hash_flag(t_info *info, char **str)
 	if (info->flags & HASH_SIGN)
 	{
 		if (info->specifier == spec_octal)
-			*str = ft_strjoin_and_free_string2("0", *str);
+			*str = ft_strjoin_and_free("0", *str, 0, 1);
 		else if (((info->specifier == spec_hexupcase || info->specifier == \
 				spec_hexlowcase) && **str != 0) || info->specifier == spec_ptr)
-			*str = ft_strjoin_and_free_string2("0x", *str);
+			*str = ft_strjoin_and_free("0x", *str, 0, 1);
 		else if (info->specifier == spec_float && info->percision == 0)
-			*str = ft_strjoin_and_free_string1(*str, ".");
+			*str = ft_strjoin_and_free(*str, ".", 1, 0);
 	}
 }
 

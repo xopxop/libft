@@ -3,19 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 23:45:44 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:53:01 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:43:21 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
+
+# include <stddef.h>
 # include <stdarg.h>
-# include <stdlib.h>
-# include <stdint.h>
-# include "libft.h"
 
 /*
 ** Flags uses a binary addressing system

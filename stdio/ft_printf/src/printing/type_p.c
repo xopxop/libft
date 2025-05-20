@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   type_p.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 04:07:20 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:40:00 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:53:07 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
+
 #define HEX_MASK 15
 #define SHIFF_HEX_MASK 4
 

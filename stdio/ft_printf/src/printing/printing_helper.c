@@ -6,11 +6,13 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/02 12:28:36 by dthan             #+#    #+#             */
-/*   Updated: 2020/02/10 08:53:39 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:50:31 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
 /*
 ** ft_isnan return 1 if not a number

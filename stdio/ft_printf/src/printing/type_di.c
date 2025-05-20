@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   type_di.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/23 04:43:51 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:40:00 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:52:12 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
 void	type_di(t_info *info, va_list arg, size_t *ct, int fd)
 {

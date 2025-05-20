@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   percision_control.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/31 14:46:54 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:17:39 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:47:38 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../string/ft_string.h"
+#include "../utility/ft_utility.h"
 
 void	prec_ctrl_str(t_info *info, char **str)
 {

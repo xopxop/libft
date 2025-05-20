@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   type_s.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/23 04:34:28 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:40:00 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:53:19 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
 void	type_s(t_info *info, va_list arg, size_t *ct, int fd)
 {

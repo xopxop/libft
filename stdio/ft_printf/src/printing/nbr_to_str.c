@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_nbr.c                                          :+:      :+:    :+:   */
+/*   nbr_to_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/31 14:56:46 by dthan             #+#    #+#             */
-/*   Updated: 2020/02/10 07:45:00 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:45:33 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 #define MAXLEN 23
 
 /*

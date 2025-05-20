@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   printing.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/08 20:40:30 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:40:00 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:43:32 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "../ft_printf.h"
 #define SPECIFIER_COUNT 11
 #define STDOUT 1
 

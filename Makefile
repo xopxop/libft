@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2025/03/11 16:46:37 by dthan            ###   ########.fr        #
+#    Updated: 2025/05/20 10:27:11 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,25 +60,25 @@ PRINT := $(addprefix $(PRINT_DIR)/,$(PRINT_FILES))
 
 STDIO_DIR := stdio
 PRINTF_DIR := ft_printf
-PRINTF_FILES += core.c
-PRINTF_FILES += parsing.c
-PRINTF_FILES += printing.c
-PRINTF_FILES += parsing/fill_struct.c
-PRINTF_FILES += parsing/parsing_helper.c
-PRINTF_FILES += printing/nbr_to_str.c
-PRINTF_FILES += printing/width_control.c
-PRINTF_FILES += printing/percision_control.c
-PRINTF_FILES += printing/flag_control.c
-PRINTF_FILES += printing/printing_helper.c
-PRINTF_FILES += printing/type_c.c
-PRINTF_FILES += printing/type_di.c
-PRINTF_FILES += printing/type_f.c
-PRINTF_FILES += printing/type_o.c
-PRINTF_FILES += printing/type_p.c
-PRINTF_FILES += printing/type_s.c
-PRINTF_FILES += printing/type_u.c
-PRINTF_FILES += printing/type_hex.c
-PRINTF_FILES += printing/type_percent.c
+PRINTF_FILES += src/core.c
+PRINTF_FILES += src/parsing.c
+PRINTF_FILES += src/printing.c
+PRINTF_FILES += src/parsing/fill_struct.c
+PRINTF_FILES += src/parsing/parsing_helper.c
+PRINTF_FILES += src/printing/nbr_to_str.c
+PRINTF_FILES += src/printing/width_control.c
+PRINTF_FILES += src/printing/percision_control.c
+PRINTF_FILES += src/printing/flag_control.c
+PRINTF_FILES += src/printing/printing_helper.c
+PRINTF_FILES += src/printing/type_c.c
+PRINTF_FILES += src/printing/type_di.c
+PRINTF_FILES += src/printing/type_f.c
+PRINTF_FILES += src/printing/type_o.c
+PRINTF_FILES += src/printing/type_p.c
+PRINTF_FILES += src/printing/type_s.c
+PRINTF_FILES += src/printing/type_u.c
+PRINTF_FILES += src/printing/type_hex.c
+PRINTF_FILES += src/printing/type_percent.c
 PRINTF := $(addprefix $(STDIO_DIR)/$(PRINTF_DIR)/,$(PRINTF_FILES))
 
 #<<<<<<<<<<STDLIB.H>>>>>>>>>>#
@@ -152,7 +152,7 @@ GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
 SRC += $(CTYPE)
 SRC += $(LIST)
 SRC += $(PRINT)
-# SRC += $(PRINTF)
+SRC += $(PRINTF)
 SRC += $(STDLIB)
 SRC += $(STRING)
 SRC += $(UTILITY)

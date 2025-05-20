@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_o.c                                           :+:      :+:    :+:   */
+/*   type_u.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/23 08:51:30 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:40:00 by dthan            ###   ########.fr       */
+/*   Created: 2019/12/23 08:01:44 by dthan             #+#    #+#             */
+/*   Updated: 2025/05/20 10:53:26 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
-#define OCTAL_MASK 7
-#define SHIFF_OCTAL_MASK 3
+#include <unistd.h>
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
-void	type_o(t_info *info, va_list arg, size_t *ct, int fd)
+void	type_u(t_info *info, va_list arg, size_t *ct, int fd)
 {
 	unsigned long long	num;
 	char				*str;
-	char				*oct;
 
-	oct = "01234567";
 	num = get_unsigned_argument(info, arg);
-	str = ft_number_conversion(num, OCTAL_MASK, SHIFF_OCTAL_MASK, oct);
+	str = ft_itoa_unsigned_longlong(num);
 	flag_ignore(info, str);
-	prec_ctrl_oct_hex(info, &str);
+	prec_ctrl_nums(info, &str, 0);
 	flag_control(info, &str, 0);
 	width_ctrl(info, &str);
 	write(fd, str, *ct = ft_strlen(str));

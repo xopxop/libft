@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   width_control.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/31 15:03:31 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:17:19 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:46:26 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../ctype/ft_ctype.h"
+#include "../string/ft_string.h"
+#include "../utility/ft_utility.h"
 
 char	get_extra(t_info *info, char **str)
 {

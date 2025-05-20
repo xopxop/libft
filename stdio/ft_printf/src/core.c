@@ -6,17 +6,23 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 02:33:13 by dthan             #+#    #+#             */
-/*   Updated: 2020/10/10 02:01:48 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:42:53 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include <stdarg.h>
+#include <stddef.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include "../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
 int	parse_and_print(const char *format, va_list args, size_t *pos, int fd)
 {
 	t_info	info;
 	int		position_copy;
-	char	*str;
+	// char	*str;
 
 	position_copy = *pos;
 	if (format[*pos] == '\0')
@@ -24,15 +30,15 @@ int	parse_and_print(const char *format, va_list args, size_t *pos, int fd)
 	parsing(format, args, pos, &info);
 	if (info.specifier == spec_none)
 	{
-		if (args)
-		{
-			*pos = position_copy + 1;
-			str = ft_itoa_signed_longlong((long long)info.dup_first_args);
-			write(fd, "%", 1);
-			write(fd, str, ft_strlen(str));
-			free(str);
-			return (ft_strlen(str) + 2);
-		}
+		// if (args)
+		// {
+		// 	*pos = position_copy + 1;
+		// 	str = ft_itoa_signed_longlong((long long)info.dup_first_args);
+		// 	write(fd, "%", 1);
+		// 	write(fd, str, ft_strlen(str));
+		// 	free(str);
+		// 	return (ft_strlen(str) + 2);
+		// }
 		*pos = position_copy;
 		write(fd, "%", 1);
 		return (0);

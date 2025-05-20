@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   fill_struct.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/23 04:38:41 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:53:09 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:44:32 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <stdarg.h>
+#include "../../ft_printf.h"
+#include "../ctype/ft_ctype.h"
 
 /*
 ** the ft parsing flags will pare the flags at the position of the string format

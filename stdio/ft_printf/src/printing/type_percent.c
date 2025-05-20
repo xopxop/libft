@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   type_percent.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dthan <dthan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/06 21:35:36 by dthan             #+#    #+#             */
-/*   Updated: 2020/05/21 21:38:13 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/20 10:54:00 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../includes/ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include "../../ft_printf.h"
+#include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 
 void	type_percent(t_info *info, __attribute__((unused)) va_list arg, \
 		size_t *ct, int fd)
