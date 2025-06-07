@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 02:33:13 by dthan             #+#    #+#             */
-/*   Updated: 2025/05/20 10:42:53 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/21 09:12:24 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,24 +74,30 @@ int	full_str_printing(const char *format, va_list args, int fd)
 	return (len);
 }
 
-int	ft_printf(const char *format, ...)
+int	full_str_printing(const char *format, va_list args, int fd)
 {
-	int		printed;
-	va_list	args;
+	size_t	pos;
+	int		len;
+	int		spurious_traling_case;
 
-	va_start(args, format);
-	printed = full_str_printing(format, args, STDOUT_FILENO);
-	va_end(args);
-	return (printed);
-}
-
-int	ft_dprintf(int fd, const char *format, ...)
-{
-	int		printed;
-	va_list	args;
-
-	va_start(args, format);
-	printed = full_str_printing(format, args, fd);
-	va_end(args);
-	return (printed);
+	pos = 0;
+	len = 0;
+	spurious_traling_case = 0;
+	while (format[pos] != '\0')
+	{
+		if (format[pos] != '%')
+		{
+			write(fd, &format[pos++], 1);
+			len++;
+		}
+		else
+		{
+			pos++;
+			len += parse_and_print(format, args, &pos, fd);
+			if (len < spurious_traling_case)
+				return (-1);
+		}
+		spurious_traling_case = len;
+	}
+	return (len);
 }

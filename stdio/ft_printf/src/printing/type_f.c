@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 04:25:23 by dthan             #+#    #+#             */
-/*   Updated: 2025/05/20 10:52:41 by dthan            ###   ########.fr       */
+/*   Updated: 2025/05/23 11:13:10 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,4 +114,39 @@ void	type_f(t_info *info, va_list arg, size_t *ct, int fd)
 	width_ctrl(info, &str);
 	write(fd, str, *ct = ft_strlen(str));
 	free(str);
+}
+
+#include "output.h"
+
+t_output	*get_print_info_from_type_f(t_info *info, va_list arg)
+{
+	t_output	*output;
+	long double	nbr;
+
+	// need to handle length
+	nbr = va_arg(arg, long double);
+	output = new_output();
+	output->len = get_output_len(info->field_width, info->percision);
+	output->str = get_output_str();
+	return (output);
+}
+
+
+char	*precision_control_float(long double nbr, t_precision precision)
+{
+	int precision_value;
+	int is_negative_nbr;
+	char *str;
+
+	is_negative_nbr = is_negative(nbr);
+	if (is_negative_nbr)
+		nbr *= -1;
+	if (is_negative_nbr)
+		nbr += 0.5; // need to change
+	else
+		nbr += 0.1; // need to change
+	str = ft_strjoin_and_free(decimal_value(nbr), fractional_value(nbr), 1, 1);
+	if (is_negative_nbr)
+		str = ft_strjoin_and_free("-", str, 0, 1);
+	return (str);
 }

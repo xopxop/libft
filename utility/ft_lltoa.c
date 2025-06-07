@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_lltoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/25 11:21:14 by dthan             #+#    #+#             */
-/*   Updated: 2025/06/06 15:27:00 by dthan            ###   ########.fr       */
+/*   Created: 2020/02/21 08:08:13 by dthan             #+#    #+#             */
+/*   Updated: 2025/06/06 15:29:28 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #define BASE_DIGITS "0123456789ABCDEF"
 
 /*
+** Only correct to handle 64bit system
 ** If provide base, it must be 2, 8, 10 or 16
 */
 
@@ -32,7 +33,7 @@ static int	count_digits(unsigned int nb, unsigned int base)
 	return (ct);
 }
 
-char	*ft_uitoa_base(unsigned int nbr, unsigned int base)
+char	*ft_ulltoa_base(unsigned long long nbr, unsigned int base)
 {
 	char	*str;
 	int	index;
@@ -54,23 +55,23 @@ char	*ft_uitoa_base(unsigned int nbr, unsigned int base)
 	return (str);
 }
 
-char	*ft_uitoa(unsigned int nbr)
+char	*ft_ulltoa(unsigned int nbr)
 {
-	return (ft_uitoa_base(nbr, 10));
+	return (ft_ulltoa_base(nbr, 10));
 }
 
-char	*ft_itoa(int signed_nbr)
+char	*ft_lltoa(int signed_nbr)
 {
-	char		*str;
-	unsigned int	unsigned_nbr;
-	
-	if (signed_nbr == INT_MIN)
-		return (ft_strdup("-2147483648"));
+	char			*str;
+	unsigned long long	unsigned_nbr;
+
+	if (signed_nbr == LLONG_MIN)
+		return (ft_strdup("-9223372036854775808"));
 	if (signed_nbr < 0)
-		unsigned_nbr = (unsigned int)(-signed_nbr);
+		unsigned_nbr = (unsigned long long)(-signed_nbr);
 	else
-		unsigned_nbr = (unsigned int)(signed_nbr);
-	str = ft_uitoa(unsigned_nbr);
+		unsigned_nbr = (unsigned long long)(signed_nbr);
+	str = ft_ulltoa(unsigned_nbr);
 	if (!str)
 		return (NULL);
 	if (signed_nbr < 0)
