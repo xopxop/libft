@@ -6,13 +6,14 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 11:21:14 by dthan             #+#    #+#             */
-/*   Updated: 2025/06/06 15:27:00 by dthan            ###   ########.fr       */
+/*   Updated: 2025/06/07 15:49:29 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <limits.h>
 #include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 #define BASE_DIGITS "0123456789ABCDEF"
 
 /*

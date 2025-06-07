@@ -6,13 +6,14 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 08:08:13 by dthan             #+#    #+#             */
-/*   Updated: 2025/06/06 15:29:28 by dthan            ###   ########.fr       */
+/*   Updated: 2025/06/07 15:51:51 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <limits.h>
 #include "../utility/ft_utility.h"
+#include "../string/ft_string.h"
 #define BASE_DIGITS "0123456789ABCDEF"
 
 /*
@@ -55,12 +56,12 @@ char	*ft_ulltoa_base(unsigned long long nbr, unsigned int base)
 	return (str);
 }
 
-char	*ft_ulltoa(unsigned int nbr)
+char	*ft_ulltoa(unsigned long long nbr)
 {
 	return (ft_ulltoa_base(nbr, 10));
 }
 
-char	*ft_lltoa(int signed_nbr)
+char	*ft_lltoa(long long signed_nbr)
 {
 	char			*str;
 	unsigned long long	unsigned_nbr;

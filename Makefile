@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2025/05/20 10:27:11 by dthan            ###   ########.fr        #
+#    Updated: 2025/06/07 15:50:01 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -134,8 +134,8 @@ UTILITY_FILES += ft_strsplit.c
 UTILITY_FILES += ft_swap.c
 UTILITY_FILES += ft_ctwords.c
 UTILITY_FILES += ft_itoa.c
+UTILITY_FILES += ft_lltoa.c
 UTILITY_FILES += ft_strjoin_and_free.c
-UTILITY_FILES += ft_itoa_signed_and_unsigned_long_long.c
 UTILITY_FILES += ft_strrev.c
 UTILITY_FILES += ft_arrayct.c
 UTILITY_FILES += ft_arraydel.c
@@ -152,7 +152,7 @@ GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
 SRC += $(CTYPE)
 SRC += $(LIST)
 SRC += $(PRINT)
-SRC += $(PRINTF)
+# SRC += $(PRINTF)
 SRC += $(STDLIB)
 SRC += $(STRING)
 SRC += $(UTILITY)
