@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse.dto.h                                        :+:      :+:    :+:   */
+/*   width.dto.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/24 10:55:42 by dthan             #+#    #+#             */
-/*   Updated: 2025/05/24 11:30:08 by dthan            ###   ########.fr       */
+/*   Created: 2025/05/24 11:27:56 by dthan             #+#    #+#             */
+/*   Updated: 2025/06/07 16:02:26 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSE_INFO_H
-# define PARSE_INFO_H
-# include "length.enum.h"
-# include "specifier.enum.h"
-# include "field_width.dto.h"
-# include "percision.dto.h"
+#ifndef WIDTH_DTO_H
+# define WIDTH_DTO_H
 
-struct	s_parse_dto
+struct  s_width_dto
 {
-	int			flags;
-	t_field_width_dto	field_width;
-	t_precision_dto		percision;
-	t_length		length;
-	t_specifier		specifier;
+	int	specified;
+	int	value;
 };
 
-typedef struct s_parse_dto	t_parse_dto;
+typedef struct s_width_dto	t_width_dto;
 
 #endif

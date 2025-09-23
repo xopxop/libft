@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2025/06/07 15:50:01 by dthan            ###   ########.fr        #
+#    Updated: 2025/06/07 15:52:45 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -152,7 +152,7 @@ GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
 SRC += $(CTYPE)
 SRC += $(LIST)
 SRC += $(PRINT)
-# SRC += $(PRINTF)
+SRC += $(PRINTF)
 SRC += $(STDLIB)
 SRC += $(STRING)
 SRC += $(UTILITY)

@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/23 04:33:24 by dthan             #+#    #+#             */
-/*   Updated: 2025/05/24 11:03:10 by dthan            ###   ########.fr       */
+/*   Updated: 2025/06/09 04:53:28 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,13 @@ static char	*get_output_str(int flags, int dst_len, char *src, int src_len)
 		ft_memcpy(dst + dst_len - src_len, src, src_len);
 	}
 	return (dst);
+}
+
+static char *apply_formatting(char chr, t_parse_dto parse_dto)
+{
+	char *str;
+
+	
 }
 
 t_print_dto	*type_c(t_parse_dto parse_dto, va_list arg)
