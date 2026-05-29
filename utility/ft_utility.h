@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 06:49:13 by dthan             #+#    #+#             */
-/*   Updated: 2025/06/06 15:30:05 by dthan            ###   ########.fr       */
+/*   Updated: 2026/05/29 09:43:00 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@ void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int	ft_strequ(char const *s1, char const *s2);
-int	ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-char    *ft_strjoin_and_free(char *s1, char *s2, char free_s1, char free_s2);
+char	*ft_strjoin_and_free(char *s1, char *s2, char free_s1, char free_s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
-int	ft_ctwords(char const *str, char c);
-int	ft_swap(int *a, int *b);
+int		ft_ctwords(char const *str, char c);
+int		ft_swap(int *a, int *b);
 char	*ft_itoa(int signed_nbr);
 char	*ft_uitoa(unsigned int nbr);
 char	*ft_uitoa_base(unsigned int nbr, unsigned int base);
@@ -39,7 +39,7 @@ char	*ft_lltoa(long long nbr);
 char	*ft_ulltoa(unsigned long long nbr);
 char	*ft_ulltoa_base(unsigned long long nbr, unsigned int base);
 char	*ft_strrev(char *str);
-int	ft_arrayct(char **input);
+int		ft_arrayct(char **input);
 void	ft_arraydel(char **string_array);
 
 #endif

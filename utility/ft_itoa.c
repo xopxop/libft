@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 11:21:14 by dthan             #+#    #+#             */
-/*   Updated: 2025/06/07 15:49:29 by dthan            ###   ########.fr       */
+/*   Updated: 2026/05/29 09:42:18 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ static int	count_digits(unsigned int nb, unsigned int base)
 char	*ft_uitoa_base(unsigned int nbr, unsigned int base)
 {
 	char	*str;
-	int	index;
-	int	str_len;
+	int		index;
+	int		str_len;
 
 	if (base != 2 && base != 8 && base != 10 && base != 16)
 		return (NULL);
@@ -62,9 +62,9 @@ char	*ft_uitoa(unsigned int nbr)
 
 char	*ft_itoa(int signed_nbr)
 {
-	char		*str;
+	char			*str;
 	unsigned int	unsigned_nbr;
-	
+
 	if (signed_nbr == INT_MIN)
 		return (ft_strdup("-2147483648"));
 	if (signed_nbr < 0)

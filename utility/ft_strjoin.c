@@ -6,14 +6,14 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 13:55:44 by dthan             #+#    #+#             */
-/*   Updated: 2025/03/11 14:11:14 by dthan            ###   ########.fr       */
+/*   Updated: 2026/05/29 09:46:24 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../string/ft_string.h"
 #include "ft_utility.h"
 
-static void copy_data(char *str, char const *s1, char const *s2)
+static void	copy_data(char *str, char const *s1, char const *s2)
 {
 	if (s1 && !s2)
 		ft_strcpy(str, (char *)s1);
@@ -26,7 +26,7 @@ static void copy_data(char *str, char const *s1, char const *s2)
 	}
 }
 
-static	char *new_str(char const *s1, char const *s2)
+static char	*new_str(char const *s1, char const *s2)
 {
 	size_t	str_size;
 
@@ -37,7 +37,7 @@ static	char *new_str(char const *s1, char const *s2)
 		str_size += ft_strlen(s2);
 	if (str_size == 0)
 		return (NULL);
-	return ft_strnew(str_size);
+	return (ft_strnew(str_size));
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)

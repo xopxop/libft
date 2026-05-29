@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 08:08:13 by dthan             #+#    #+#             */
-/*   Updated: 2025/06/07 15:51:51 by dthan            ###   ########.fr       */
+/*   Updated: 2026/05/29 09:43:44 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ static int	count_digits(unsigned int nb, unsigned int base)
 char	*ft_ulltoa_base(unsigned long long nbr, unsigned int base)
 {
 	char	*str;
-	int	index;
-	int	str_len;
+	int		index;
+	int		str_len;
 
 	if (base != 2 && base != 8 && base != 10 && base != 16)
 		return (NULL);
@@ -63,7 +63,7 @@ char	*ft_ulltoa(unsigned long long nbr)
 
 char	*ft_lltoa(long long signed_nbr)
 {
-	char			*str;
+	char				*str;
 	unsigned long long	unsigned_nbr;
 
 	if (signed_nbr == LLONG_MIN)

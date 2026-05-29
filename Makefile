@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2026/05/29 09:34:06 by dthan            ###   ########.fr        #
+#    Updated: 2026/05/29 09:39:56 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -112,33 +112,33 @@ STRING_FILES += ft_strcmp.c
 STRING_FILES += ft_strncmp.c
 STRING := $(addprefix $(STRING_DIR)/,$(STRING_FILES))
 
-# #<<<<<<<<<<UTILITY.H>>>>>>>>>>
+#<<<<<<<<<<UTILITY.H>>>>>>>>>>
 
-# UTILITY_DIR := utility
-# UTILITY_FILES += ft_memalloc.c
-# UTILITY_FILES += ft_memdel.c
-# UTILITY_FILES += ft_strnew.c
-# UTILITY_FILES += ft_strdel.c
-# UTILITY_FILES += ft_strclr.c
-# UTILITY_FILES += ft_striter.c
-# UTILITY_FILES += ft_striteri.c
-# UTILITY_FILES += ft_strmap.c
-# UTILITY_FILES += ft_strmapi.c
-# UTILITY_FILES += ft_strequ.c
-# UTILITY_FILES += ft_strnequ.c
-# UTILITY_FILES += ft_strsub.c
-# UTILITY_FILES += ft_strjoin.c
-# UTILITY_FILES += ft_strtrim.c
-# UTILITY_FILES += ft_strsplit.c
-# UTILITY_FILES += ft_swap.c
-# UTILITY_FILES += ft_ctwords.c
-# UTILITY_FILES += ft_itoa.c
-# UTILITY_FILES += ft_lltoa.c
-# UTILITY_FILES += ft_strjoin_and_free.c
-# UTILITY_FILES += ft_strrev.c
-# UTILITY_FILES += ft_arrayct.c
-# UTILITY_FILES += ft_arraydel.c
-# UTILITY := $(addprefix $(UTILITY_DIR)/,$(UTILITY_FILES))
+UTILITY_DIR := utility
+UTILITY_FILES += ft_memalloc.c
+UTILITY_FILES += ft_memdel.c
+UTILITY_FILES += ft_strnew.c
+UTILITY_FILES += ft_strdel.c
+UTILITY_FILES += ft_strclr.c
+UTILITY_FILES += ft_striter.c
+UTILITY_FILES += ft_striteri.c
+UTILITY_FILES += ft_strmap.c
+UTILITY_FILES += ft_strmapi.c
+UTILITY_FILES += ft_strequ.c
+UTILITY_FILES += ft_strnequ.c
+UTILITY_FILES += ft_strsub.c
+UTILITY_FILES += ft_strjoin.c
+UTILITY_FILES += ft_strtrim.c
+UTILITY_FILES += ft_strsplit.c
+UTILITY_FILES += ft_swap.c
+UTILITY_FILES += ft_ctwords.c
+UTILITY_FILES += ft_itoa.c
+UTILITY_FILES += ft_lltoa.c
+UTILITY_FILES += ft_strjoin_and_free.c
+UTILITY_FILES += ft_strrev.c
+UTILITY_FILES += ft_arrayct.c
+UTILITY_FILES += ft_arraydel.c
+UTILITY := $(addprefix $(UTILITY_DIR)/,$(UTILITY_FILES))
 
 # #<<<<<<<<<<GET_NEXT_LINE>>>>>>>>>>#
 
@@ -154,7 +154,7 @@ SRC += $(LIST)
 # SRC += $(PRINTF)
 # SRC += $(STDLIB)
 SRC += $(STRING)
-# SRC += $(UTILITY)
+SRC += $(UTILITY)
 # SRC += $(GNL)
 
 OBJ_DIR := objects
