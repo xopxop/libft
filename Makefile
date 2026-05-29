@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2026/05/29 09:26:15 by dthan            ###   ########.fr        #
+#    Updated: 2026/05/29 09:34:06 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,31 +86,31 @@ LIST := $(addprefix $(LIST_DIR)/,$(LIST_FILES))
 # STDLIB_FILES += ft_atoi.c
 # STDLIB = $(addprefix $(STDLIB_DIR)/,$(STDLIB_FILES))
 
-# #<<<<<<<<<<STRING.H>>>>>>>>>>#
+#<<<<<<<<<<STRING.H>>>>>>>>>>#
 
-# STRING_DIR := string
-# STRING_FILES += ft_memset.c
-# STRING_FILES += ft_bzero.c
-# STRING_FILES += ft_memcpy.c
-# STRING_FILES += ft_memccpy.c
-# STRING_FILES += ft_memmove.c
-# STRING_FILES += ft_memchr.c
-# STRING_FILES += ft_memcmp.c
-# STRING_FILES += ft_strlen.c
-# STRING_FILES += ft_strdup.c
-# STRING_FILES += ft_strndup.c
-# STRING_FILES += ft_strcpy.c
-# STRING_FILES += ft_strncpy.c
-# STRING_FILES += ft_strcat.c
-# STRING_FILES += ft_strncat.c
-# STRING_FILES += ft_strlcat.c
-# STRING_FILES += ft_strchr.c
-# STRING_FILES += ft_strrchr.c
-# STRING_FILES += ft_strstr.c
-# STRING_FILES += ft_strnstr.c
-# STRING_FILES += ft_strcmp.c
-# STRING_FILES += ft_strncmp.c
-# STRING := $(addprefix $(STRING_DIR)/,$(STRING_FILES))
+STRING_DIR := string
+STRING_FILES += ft_memset.c
+STRING_FILES += ft_bzero.c
+STRING_FILES += ft_memcpy.c
+STRING_FILES += ft_memccpy.c
+STRING_FILES += ft_memmove.c
+STRING_FILES += ft_memchr.c
+STRING_FILES += ft_memcmp.c
+STRING_FILES += ft_strlen.c
+STRING_FILES += ft_strdup.c
+STRING_FILES += ft_strndup.c
+STRING_FILES += ft_strcpy.c
+STRING_FILES += ft_strncpy.c
+STRING_FILES += ft_strcat.c
+STRING_FILES += ft_strncat.c
+STRING_FILES += ft_strlcat.c
+STRING_FILES += ft_strchr.c
+STRING_FILES += ft_strrchr.c
+STRING_FILES += ft_strstr.c
+STRING_FILES += ft_strnstr.c
+STRING_FILES += ft_strcmp.c
+STRING_FILES += ft_strncmp.c
+STRING := $(addprefix $(STRING_DIR)/,$(STRING_FILES))
 
 # #<<<<<<<<<<UTILITY.H>>>>>>>>>>
 
@@ -153,7 +153,7 @@ SRC += $(LIST)
 # SRC += $(PRINT)
 # SRC += $(PRINTF)
 # SRC += $(STDLIB)
-# SRC += $(STRING)
+SRC += $(STRING)
 # SRC += $(UTILITY)
 # SRC += $(GNL)
 

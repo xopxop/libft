@@ -6,7 +6,7 @@
 /*   By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 19:09:19 by dthan             #+#    #+#             */
-/*   Updated: 2024/04/20 23:24:32 by dthan            ###   ########.fr       */
+/*   Updated: 2026/05/29 09:37:59 by dthan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 	{
 		if (ptr[index] == (unsigned char)c)
-			return &ptr[index];
+			return (&ptr[index]);
 		index++;
 	}
 	return (NULL);
