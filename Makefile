@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2026/05/29 09:01:54 by dthan            ###   ########.fr        #
+#    Updated: 2026/05/29 09:26:15 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,16 +31,16 @@ CTYPE_FILES += ft_toupper.c
 CTYPE_FILES += ft_tolower.c
 CTYPE := $(addprefix $(CTYPE_DIR)/,$(CTYPE_FILES))
 
-# #<<<<<<<<<<LIST.H>>>>>>>>>>#
+#<<<<<<<<<<LIST.H>>>>>>>>>>#
 
-# LIST_DIR := list
-# LIST_FILES += ft_lstnew.c
-# LIST_FILES += ft_lstdelone.c
-# LIST_FILES += ft_lstdel.c
-# LIST_FILES += ft_lstadd.c
-# LIST_FILES += ft_lstiter.c
-# LIST_FILES += ft_lstmap.c
-# LIST := $(addprefix $(LIST_DIR)/,$(LIST_FILES))
+LIST_DIR := list
+LIST_FILES += ft_lstnew.c
+LIST_FILES += ft_lstdelone.c
+LIST_FILES += ft_lstdel.c
+LIST_FILES += ft_lstadd.c
+LIST_FILES += ft_lstiter.c
+LIST_FILES += ft_lstmap.c
+LIST := $(addprefix $(LIST_DIR)/,$(LIST_FILES))
 
 # #<<<<<<<<<<PRINT.H>>>>>>>>>>#
 
@@ -149,7 +149,7 @@ CTYPE := $(addprefix $(CTYPE_DIR)/,$(CTYPE_FILES))
 
 ###### SUM-UP #####
 SRC += $(CTYPE)
-# SRC += $(LIST)
+SRC += $(LIST)
 # SRC += $(PRINT)
 # SRC += $(PRINTF)
 # SRC += $(STDLIB)
