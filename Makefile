@@ -6,7 +6,7 @@
 #    By: dthan <dthan@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 16:34:34 by dthan             #+#    #+#              #
-#    Updated: 2026/05/29 09:39:56 by dthan            ###   ########.fr        #
+#    Updated: 2026/05/29 14:47:10 by dthan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,18 +42,18 @@ LIST_FILES += ft_lstiter.c
 LIST_FILES += ft_lstmap.c
 LIST := $(addprefix $(LIST_DIR)/,$(LIST_FILES))
 
-# #<<<<<<<<<<PRINT.H>>>>>>>>>>#
+#<<<<<<<<<<PRINT.H>>>>>>>>>>#
 
-# PRINT_DIR := print
-# PRINT_FILES += ft_putchar.c
-# PRINT_FILES += ft_putstr.c
-# PRINT_FILES += ft_putendl.c
-# PRINT_FILES += ft_putnbr.c
-# PRINT_FILES += ft_putchar_fd.c
-# PRINT_FILES += ft_putstr_fd.c
-# PRINT_FILES += ft_putendl_fd.c
-# PRINT_FILES += ft_putnbr_fd.c
-# PRINT := $(addprefix $(PRINT_DIR)/,$(PRINT_FILES))
+PRINT_DIR := print
+PRINT_FILES += ft_putchar.c
+PRINT_FILES += ft_putstr.c
+PRINT_FILES += ft_putendl.c
+PRINT_FILES += ft_putnbr.c
+PRINT_FILES += ft_putchar_fd.c
+PRINT_FILES += ft_putstr_fd.c
+PRINT_FILES += ft_putendl_fd.c
+PRINT_FILES += ft_putnbr_fd.c
+PRINT := $(addprefix $(PRINT_DIR)/,$(PRINT_FILES))
 
 # #<<<<<<<<<<PRINTF_H>>>>>>>>>>
 
@@ -140,22 +140,22 @@ UTILITY_FILES += ft_arrayct.c
 UTILITY_FILES += ft_arraydel.c
 UTILITY := $(addprefix $(UTILITY_DIR)/,$(UTILITY_FILES))
 
-# #<<<<<<<<<<GET_NEXT_LINE>>>>>>>>>>#
+#<<<<<<<<<<GET_NEXT_LINE>>>>>>>>>>#
 
-# GNL_DIR := get_next_line
-# GNL_FILES += get_next_line.c
+GNL_DIR := get_next_line
+GNL_FILES += get_next_line.c
 # GNL_FILES += gnl_helper.c
-# GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
+GNL := $(addprefix $(GNL_DIR)/,$(GNL_FILES))
 
 ###### SUM-UP #####
 SRC += $(CTYPE)
 SRC += $(LIST)
-# SRC += $(PRINT)
+SRC += $(PRINT)
 # SRC += $(PRINTF)
 # SRC += $(STDLIB)
 SRC += $(STRING)
 SRC += $(UTILITY)
-# SRC += $(GNL)
+SRC += $(GNL)
 
 OBJ_DIR := objects
 OBJ_FILES := $(addprefix $(OBJ_DIR)/,$(SRC:%.c=%.o))
